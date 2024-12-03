@@ -35,8 +35,3 @@ La aplicación se abrirá en tu navegador en una URL como `http://127.0.0.1:5500
 ## **Notas**
 - Todos los estilos y elementos visuales fueron desarrollados según las especificaciones proporcionadas en Figma.
 - Se priorizó la mantenibilidad del código y el rendimiento web.
-
-## **Conclusión**
-Espero que este proyecto cumpla con las expectativas de la prueba técnica. Estoy disponible para cualquier consulta o aclaración que sea necesaria.
-
-¡Gracias por la oportunidad!
