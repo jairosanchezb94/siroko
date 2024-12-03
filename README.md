@@ -10,17 +10,15 @@ Este proyecto es una implementación de un formulario interactivo de dos pasos q
 
 ## **Estructura del Proyecto**
 project/
-│
-├── index.html             # Página principal (primer paso del formulario)
-├── views/
-│   ├── screen2.html       # Segunda pantalla del formulario
-│   ├── screen3.html       # Pantalla final con el código promocional
-│
-├── assets/                # Recursos estáticos como imágenes, iconos y fuentes
-├── style.css              # Estilos globales y específicos
-├── scripts.js             # Lógica del formulario
-│
-└── README.md              # Documentación del proyecto
+├── index.html             - Página principal (primer paso del formulario)
+├── views/                 - Contiene las pantallas adicionales
+│   ├── screen2.html       - Segunda pantalla del formulario
+│   ├── screen3.html       - Pantalla final con el código promocional
+├── assets/                - Recursos estáticos (imágenes, iconos, fuentes)
+├── style.css              - Estilos globales y específicos
+├── scripts.js             - Lógica del formulario
+└── README.md              - Documentación del proyecto
+
 
 ## **Cómo Ejecutar el Proyecto**
 1. Clona este repositorio o descarga el archivo ZIP.
