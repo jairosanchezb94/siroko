@@ -1,0 +1,107 @@
+/* Options box */
+.option-box {
+    width: 100%;
+    max-width: 500px;
+    padding: 10px 0;
+    gap: 5px;
+    border-radius: 3px 0 0 0;
+    background: #311429;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    overflow-y: auto;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+
+.editable-text {
+    width: 100%;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16px;
+    text-align: left;
+    color: #EFE5C3;
+    padding: 2px 4px;
+}
+
+.option {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    width: 100%;
+    height: 36px;
+    padding: 8px;
+    border-radius: 4px;
+    background: #FFFFFF17;
+    cursor: pointer;
+    margin-bottom: 5px;
+    transition: background 0.3s ease;
+}
+
+.option[data-checked="true"] {
+    background: #C92F58;
+}
+
+.radio {
+    width: 16px;
+    height: 16px;
+    border: 2px solid white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.radio:before {
+    content: '';
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: white;
+    display: none;
+}
+
+.option[data-checked="true"] .radio:before {
+    display: block;
+}
+
+.option-text {
+    color: white;
+    font-size: 14px;
+    font-family: 'Inter', sans-serif;
+    text-align: left;
+    flex-grow: 1;
+}
+
+/* Responsive styles */
+@media (min-width: 768px) {
+    .option-box {
+        max-width: 1200px; /* Size for large screens */
+        padding: 20px 0;
+        gap: 20px;
+    }
+
+    .editable-text {
+        width: 100%;
+        max-width: 1125px;
+    }
+
+    .option {
+        max-width: 1110px;
+    }
+}
+
+@media (max-width: 768px) {
+    .editable-text {
+        width: 80%;
+    }
+    .option-box {
+        width: 95%;
+        max-width: 400px;
+    }
+    .option {
+        width: 80%;
+    }
+}

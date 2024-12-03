@@ -1,0 +1,186 @@
+/* CSS for index */
+body {
+    margin: 0;
+    padding: 0;
+    background: url('./screens/Elements/background/background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Inter', sans-serif;
+    color: white;
+    overflow-x: hidden;
+}
+
+/* Main container */
+.screen-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px 20px 0;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header */
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    width: 100%;
+    max-width: 1000px;
+    margin-bottom: 20px;
+}
+
+/* Logo */
+.logo {
+    width: 145px;
+    height: 35px;
+    object-fit: contain;
+}
+
+/* Step indicator */
+.step-indicator {
+    width: fit-content;
+    height: 17px;
+    padding: 3px 7px;
+    background: #5DC2BD;
+    border-radius: 3px 3px 3px 3px;
+}
+
+.step-text {
+    font-family: 'Inter', sans-serif;
+    font-size: 9px;
+    font-weight: 700;
+    line-height: 10.89px;
+    color: #2C5E5B;
+    align-items: center;
+}
+
+/* Qualification */
+.screen-title {
+    width: 100%;
+    font-family: 'Liberator SIROKO', sans-serif;
+    font-size: 45px;
+    font-weight: 800;
+    line-height: 50px;
+    text-align: left;
+    margin: 0;
+}
+
+/* Description */
+.screen-description {
+    width: 100%;
+    font-family: 'Inconsolata', monospace;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 25px;
+    text-align: left;
+    margin: 0;
+    word-wrap: break-word;
+}
+
+.screen {
+    display: none; /* Hide all screens by default */
+}
+
+.screen.active {
+    display: block; /* Show only the active screen */
+}
+
+.option-box {
+    width: 100%;
+    max-width: 1000px;
+    margin-bottom: 20px;
+}
+
+.custom-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 1000px;
+    height: 44px;
+    padding: 12px 0;
+    background: #339B95;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.custom-button:hover {
+    background: #287f7a;
+}
+
+/* CodeBox-specific styles */
+.promo-container {
+    width: auto;
+    padding: 20px;
+    background-color: #2A1424;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.promo-header {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 16px;
+    color: #EFE5C3;
+}
+
+.promo-code-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(270deg, #FFFFFF 0%, #BDBDBD 100%);
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+}
+
+.promo-code {
+    font-family: 'Inconsolata', monospace;
+    font-size: 20px;
+    font-weight: 700;
+    color: #2A1424;
+}
+
+.copy-button {
+    background: none;
+    border: 1px solid #2A1424;
+    border-radius: 4px;
+    padding: 5px 10px;
+    font-family: 'Inconsolata', monospace;
+    font-size: 14px;
+    color: #2A1424;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.copy-button:hover {
+    background-color: #2A1424;
+    color: #FFFFFF;
+}
+
+/* Styles for the code-box */
+.code-box {
+    width: 100%;
+    padding: 20px;
+    background: #311429;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .code-box {
+        width: 95%;
+        max-width: 400px;
+    }
+
+    .screen-title {
+        font-size: 20px;
+    }
+}

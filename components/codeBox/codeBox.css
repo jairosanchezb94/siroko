@@ -1,0 +1,110 @@
+/* Main container */
+.promo-container {
+    width: auto;
+    padding: 20px;
+    background-color: #2A1424;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+/* Header */
+.promo-header {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 16px;
+    color: #EFE5C3;
+}
+
+/* Code box */
+.promo-code-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(270deg, #FFFFFF 0%, #BDBDBD 100%);
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+}
+
+.promo-code {
+    font-family: 'Inconsolata', monospace;
+    font-size: 20px;
+    font-weight: 700;
+    color: #2A1424;
+}
+
+.copy-button {
+    background: none;
+    border: 1px solid #2A1424;
+    border-radius: 4px;
+    padding: 5px 10px;
+    font-family: 'Inconsolata', monospace;
+    font-size: 14px;
+    color: #2A1424;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.copy-button:hover {
+    background-color: #2A1424;
+    color: #FFFFFF;
+}
+
+/* Description */
+.promo-description {
+    font-family: 'Inconsolata', monospace;
+    font-size: 14px;
+    margin-bottom: 16px;
+    line-height: 1.5;
+    color: white;
+}
+
+/* Timer */
+.timer-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #3F2035;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+.timer-box.expired {
+    background-color: #C51414;
+}
+
+.timer-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.timer-text {
+    font-family: 'Inconsolata', monospace;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+/* Main button */
+.promo-button {
+    width: 100%;
+    padding: 12px;
+    background-color: #339B95;
+    color: #FFFFFF;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.promo-button:hover {
+    background-color: #287f7a;
+}

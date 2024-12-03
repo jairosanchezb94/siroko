@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Siroko App</title>
+    <link rel="stylesheet" href="style.css"> <!-- General styles -->
+    <link rel="stylesheet" href="./components/selectorAll/selectorAll.css"> <!-- Option Box Styles -->
+    <link rel="stylesheet" href="./components/buttonText/buttonText.css"> <!-- Custom Button Styles -->
+    <link rel="stylesheet" href="./components/footer/footer.css"> <!-- Footer Styles -->
+</head>
+<body>
+    <div id="app-container">
+        <div class="screen-container">
+            <!-- Header with logo and step indicator -->
+            <div class="header">
+                <img src="./assets/icons/Vector.svg" alt="Logo Vector" class="logo">
+                <div class="step-indicator">
+                    <span class="step-text">PASO 1 DE 2</span>
+                </div>
+            </div>
+
+            <!-- Title -->
+            <h1 class="screen-title">¡VAMOS ALLÁ!</h1>
+
+            <!-- Description -->
+            <p class="screen-description">
+                Has llegado hasta el test de Siroko. Responde las siguientes preguntas y genera tu código premiado a medida.
+            </p>
+
+            <!-- Combined component: Option Box + Custom Button -->
+            <div class="option-box">
+                <div class="editable-text">USO SIROKO DESDE...</div>
+                <div class="option" data-checked="false" data-value="2016">
+                    <div class="radio"></div>
+                    <span class="option-text">2016</span>
+                </div>
+                <div class="option" data-checked="true" data-value="2017">
+                    <div class="radio"></div>
+                    <span class="option-text">2017</span>
+                </div>
+                <div class="option" data-checked="false" data-value="2018">
+                    <div class="radio"></div>
+                    <span class="option-text">2018</span>
+                </div>
+                <div class="option" data-checked="false" data-value="2019">
+                    <div class="radio"></div>
+                    <span class="option-text">2019</span>
+                </div>
+                <div class="option" data-checked="false" data-value="2020">
+                    <div class="radio"></div>
+                    <span class="option-text">2020</span>
+                </div>
+                <div class="option" data-checked="false" data-value="2021">
+                    <div class="radio"></div>
+                    <span class="option-text">2021</span>
+                </div>
+
+                <!-- Custom button -->
+                <div class="button-container">
+                    <button class="custom-button" id="next-button">
+                        <span class="button-text">Siguiente</span>
+                        <span class="button-arrow">→</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <span>2016-2021 Siroko Solutions S.L.</span>
+            <span>Todos los derechos reservados. <a href="https://www.siroko.com/es/i/legal" class="footer-link">Ver bases.</a></span>
+        </div>
+    </footer>
+    
+    <script src="./components/buttonText/scripts.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            setupOptions('.option-box');
+            setupNextButton('#next-button', './views/screen2.html', 'selectedOption');
+        });
+    </script>
+</body>
+</html>

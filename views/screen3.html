@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Screen 3</title>
+    <link rel="stylesheet" href="../style.css"> <!-- General styles -->
+    <link rel="stylesheet" href="../components/codeBox/codeBox.css"> <!-- CodeBox component styles -->
+    <link rel="stylesheet" href="../components/footer/footer.css"> <!-- Footer Styles -->
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="screen-container">
+        <!-- Header with logo and step indicator -->
+        <div class="header">
+            <img src="../assets/icons/Vector.svg" alt="Logo Vector" class="logo">
+            <div class="step-indicator">
+                <span class="step-text">TU PREMIO ESTÁ LISTO</span>
+            </div>
+        </div>
+
+        <!-- Title -->
+        <h1 class="screen-title">¡ENHORABUENA!</h1>
+        <p class="screen-description" id="selected-option-step2">
+        </p>
+
+        <!-- codeBox component -->
+        <div id="code-box-container" class="code-box">
+            <div class="promo-container">
+                <p class="promo-header">LO PROMETIDO ES DEUDA</p>
+                <div class="promo-code-box">
+                    <span class="promo-code">Cargando...</span>
+                    <button class="copy-button">Copiar</button>
+                </div>
+                <p class="promo-description">
+                    Introduce este código en tu próxima compra para conseguir tu premio.
+                    ¡Disponible durante 20 minutos!
+                </p>
+                <div class="timer-box" id="timer-box">
+                    <img src="../assets/icons/clock.svg" alt="Clock Icon" class="timer-icon">
+                    <span class="timer-text" id="timer">20:00</span>
+                </div>
+                <button class="promo-button" id="go-to-siroko">Ir a siroko.com →</button>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="footer-content">
+            <span>2016-2021 Siroko Solutions S.L.</span>
+            <span>Todos los derechos reservados. <a href="https://www.siroko.com/es/i/legal" class="footer-link">Ver bases.</a></span>
+        </div>
+    </footer>
+    <script src="../components/codeBox/codeBox.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', initializeScreen3);
+    </script>
+</body>
+</html>
+

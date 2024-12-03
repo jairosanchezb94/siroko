@@ -1,0 +1,63 @@
+.button-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.custom-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 285px;
+    height: 44px;
+    padding: 12px 0;
+    gap: 10px;
+    border: none;
+    border-radius: 4px 0 0 0;
+    background: #339B95;
+    color: white;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.custom-button:hover {
+    background: #287f7a;
+}
+
+/* Checked state */
+.custom-button.marked {
+    background: white;
+    color: #339B95;
+    border: 2px solid #339B95;
+}
+
+.custom-button.marked .button-arrow {
+    color: #339B95;
+}
+
+.button-text {
+    margin-right: 5px;
+}
+
+.button-arrow {
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+@media (min-width: 768px) {
+    .custom-button {
+        max-width: 1110px;
+    }
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .custom-button {
+        width: 80%;
+    }
+}

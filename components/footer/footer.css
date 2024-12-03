@@ -1,0 +1,36 @@
+/* Footer */
+.footer {
+    background-color: #000;
+    color: #BBBBBB;
+    padding: 10px 20px;
+    font-family: 'Inconsolata', monospace;
+    font-size: 14px;
+    line-height: 1.5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.footer-content {
+    text-align: left;
+    width: 60%;
+}
+
+.footer-content span {
+    display: block;
+}
+
+.footer-link {
+    color: #fff;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.footer-link:hover {
+    color: #ccc;
+}
