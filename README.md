@@ -9,16 +9,7 @@ Este proyecto es una implementación de un formulario interactivo de dos pasos q
 - **Flexbox**: Para la disposición del contenido y el posicionamiento del footer.
 
 ## **Estructura del Proyecto**
-project/
-├── index.html             - Página principal (primer paso del formulario)
-├── views/                 - Contiene las pantallas adicionales
-│   ├── screen2.html       - Segunda pantalla del formulario
-│   ├── screen3.html       - Pantalla final con el código promocional
-├── assets/                - Recursos estáticos (imágenes, iconos, fuentes)
-├── style.css              - Estilos globales y específicos
-├── scripts.js             - Lógica del formulario
-└── README.md              - Documentación del proyecto
-
+![Captura de pantalla 2024-12-03 104351](https://github.com/user-attachments/assets/3166d032-f2ce-4da0-ace0-bf8e5cbd51a2)
 
 ## **Cómo Ejecutar el Proyecto**
 1. Clona este repositorio o descarga el archivo ZIP.
